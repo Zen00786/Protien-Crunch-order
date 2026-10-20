@@ -1,7 +1,0 @@
-Web app
-URL
-
-https://script.google.com/macros/s/AKfycbxrT57_c7KGnq6AjRudqKzNefiB4fMgEkeAl7GjIk3mgm1QvgQZJ1KtZsBN94-3f0w4/exec
-
-Deployment ID
-AKfycbxrT57_c7KGnq6AjRudqKzNefiB4fMgEkeAl7GjIk3mgm1QvgQZJ1KtZsBN94-3f0w4
