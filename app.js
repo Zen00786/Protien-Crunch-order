@@ -21,7 +21,7 @@ const groups=[
 ["Egg Specials",[["Boiled Egg",25],["Egg Omelette",49],["Bread Omelette",59]]]
 ];
 const products=groups.flatMap(([category,items])=>items.map(([name,prices])=>({category,name,prices:Array.isArray(prices)&&Array.isArray(prices[0])?prices.map(([label,price])=>({label,price})): [{label:"Regular",price:prices}]})));
-let category="All",cart=[],eligible=null;
+let category="All",cart=[],eligible=null,customerLocation=null;
 const $=id=>document.getElementById(id),rupees=n=>"₹"+n;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function renderTabs(){$("tabs").innerHTML=["All",...groups.map(g=>g[0])].map(c=>`<button class="tab ${c===category?"active":""}" data-c="${esc(c)}">${esc(c)}</button>`).join("");$("tabs").querySelectorAll("button").forEach(b=>b.onclick=()=>{category=b.dataset.c;renderTabs();renderMenu()})}
