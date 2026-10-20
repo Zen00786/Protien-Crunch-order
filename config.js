@@ -5,6 +5,6 @@ window.PROTEIN_CRUNCH_CONFIG = {
   shopPhone: "7026505626",
   deliveryRadiusKm: 5,
   // Set these to verified coordinates from the shop's exact Google Maps pin.
-  shopLatitude: null,
-  shopLongitude: null
+shopLatitude: 12.339308007953445,
+shopLongitude: 76.65044763735777
 };
